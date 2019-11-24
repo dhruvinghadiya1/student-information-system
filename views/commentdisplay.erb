@@ -1,0 +1,13 @@
+<p>Name of the Student:
+	<%=@comment.name%></p>
+<p>Comment Content:
+	<%=@comment.comment_txt%></p>
+<p>Created at:
+	<%=@comment.created_at%></p>
+
+<a href="/comment">Back</a>
+
+<form action="/comment/<%=@comment.id%>" method="POST">
+	<input type="hidden" name="_method" value="DELETE">
+	<input type="submit" value="Delete">
+</form>

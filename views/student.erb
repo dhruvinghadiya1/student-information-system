@@ -1,0 +1,24 @@
+<h3>Student Information</h3>
+
+<a href='/students/new'>Add a new Student</a>
+
+<table>
+	<tr>
+		<th>ID</th>
+		<th>First Name</th>
+		<th>Last Name</th>
+	</tr>
+<% if @student.any? %>
+		<% @student.each do |s| %>
+				<tr>
+					<td><a href="/students/<%=s.id%>"><%=s.scuid%></a></td>
+					<td><%=s.firstname%></td>
+					<td><%=s.lastname%></td>
+				</tr>
+		<%end%>
+<%else %>
+	<tr>
+		<td>No Students!</td>
+	</tr>
+<% end %>
+</table>

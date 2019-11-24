@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset='utf-8'>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>
+      <%= @title || "Student Information System"%>
+      </title>
+    </head>
+    <body>
+
+      <p style="color: #26BFF0 ;font: 42px/1 Helvetica, Arial, sans-serif; margin-bottom: 30px;
+                text-shadow: 4px 4px 8px #FFDD90; text-align:center">
+      Student Information System
+      </p>
+      <p>
+      <img src="images/stdnt.jpeg" align="middle" alt="students" width="1000" height="450">
+      </p>
+      <%=erb :menu%>
+      <%= yield %>
+    </body>
+  </html>
+

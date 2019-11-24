@@ -1,0 +1,22 @@
+<p>Information of 
+	<%=@student.firstname%>
+	<%=@student.lastname%></p>
+<p>ID:
+	<%=@student.scuid%></p>
+<p>First Name:
+	<%=@student.firstname%></p>
+<p>Last Name:
+	<%=@student.lastname%></p>
+<p>Birthdate:
+	<%=@student.birthday%></p>
+<p>Address:
+	<%=@student.address%></p>
+
+<a href="/students">Back</a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="/students/<%=@student.id%>/edit">Want to Edit?</a>
+
+<form action="/students/<%=@student.id%>" method="POST">
+	<input type="hidden" name="_method" value="DELETE">
+	<input type="submit" value="Delete">
+</form>

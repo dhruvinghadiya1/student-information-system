@@ -1,0 +1,9 @@
+<h3>Add Comment here
+</h3>
+<form action="/comment" method="POST">
+	<label for="name">Name:</label>
+	<input type="text" name="name" id="name" value="<%=@comment.name%>"><br>
+	<label for="comment_txt">What is your Comment?</label>
+	<input type="text" name="comment_txt" id="comment_txt" value="<%= @comment.comment_txt %>"><br>
+	<input type="submit" value="Add">
+</form>

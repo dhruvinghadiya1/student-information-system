@@ -1,0 +1,14 @@
+<h3>Login in to continue. <% if @failed %>
+<i>Ow! Login failed.</i>
+<% end %></h3>
+<div style="width: 18em;border: 1px solid #333;box-shadow: 8px 8px 5px #444;padding: 8px 12px;
+            background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc); align:middle">
+<form action="/" method='post'>
+   Username:
+  <input type='text' name='username'></input><br><br>
+  Password :
+  <input type='password' name='password'></input>
+  <br><br>
+  <input type='submit' name='submit'></input>
+</form>
+</div>

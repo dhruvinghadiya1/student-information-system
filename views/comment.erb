@@ -1,0 +1,21 @@
+<h3>Comment</h3>
+
+<a href='/comment/new'>Add New Comment</a>
+<table>
+	<tr>
+		<th>Comment</th>
+		<th>Timestamp</th>
+	</tr>
+<% if @comments.any? %>
+		<% @comments.each do |c| %>
+			<tr>
+				<td><a href="/comment/<%=c.id%>"><%= c.comment_txt %></a></td>
+				<td><%= c.created_at %></td>
+			</tr>
+		<%end%>
+<%else %>
+	<tr>
+		<td>No Comments!</td>
+	</tr>
+<% end %>
+</table>

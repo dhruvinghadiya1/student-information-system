@@ -1,0 +1,34 @@
+<tabs>
+
+  <div id="menu-outer">
+    <div class="table">
+      <ul id="horizontal-list">
+        <% if !session[:admin] %>
+          <li>
+            <a href='/login'>Log in</a>
+          </li>
+        <% else %>
+          <li>
+            <a href='/logout'>Log out</a>
+          </li>
+        <% end %>
+        <li>
+          <a href='/students'>Students</a>
+        </li>
+        <li>
+          <a href='/comment'>Comment</a>
+        </li>
+        <li>
+          <a href='/video'>Video</a>
+        </li>
+        <li>
+          <a href='/about'>About</a>
+        </li>
+        <li>
+          <a href='/contact'>Contact</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</tabs>
