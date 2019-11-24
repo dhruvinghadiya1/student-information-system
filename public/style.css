@@ -54,7 +54,7 @@ header h1 {
 }
 
 ul#horizontal-list {
-  min-width: 800px;
+  max-width: 800px;
   list-style: none;
   padding: 6px;
   
